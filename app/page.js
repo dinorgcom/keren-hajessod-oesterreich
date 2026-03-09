@@ -417,7 +417,6 @@ function Footer() {
         </div>
         <div>
           <h4 style={{ fontFamily: fm, fontSize: 12, fontWeight: 700, letterSpacing: 1, textTransform: 'uppercase', color: C.gold, marginBottom: 14 }}>Kontakt Wien</h4>
-          <p style={{ fontSize: 13, lineHeight: 1.7, marginBottom: 8 }}>Rafi Heumann<br />Landesvertreter</p>
           <p style={{ fontSize: 13, lineHeight: 1.7 }}><a href="mailto:kh-austria@kh-uia.org.il" style={{ color: C.gold, textDecoration: 'none' }}>kh-austria@kh-uia.org.il</a><br />+43-1-535 536 630</p>
           <p style={{ fontSize: 13, lineHeight: 1.7, marginTop: 14 }}><strong style={{ color: 'rgba(255,255,255,.9)' }}>Hauptsitz Israel</strong><br />48 King George St.<br />Jerusalem 9426218</p>
         </div>
