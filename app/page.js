@@ -113,8 +113,13 @@ function Hero() {
   const go = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
   return (
     <section id="top" style={{ position: 'relative', minHeight: '82vh', display: 'flex', alignItems: 'center', overflow: 'hidden' }}>
-      <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(https://images.unsplash.com/photo-1547483238-2cbf881a559f?w=1600&q=80)', backgroundSize: 'cover', backgroundPosition: 'center' }} />
-      <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(135deg, rgba(0,46,90,.87), rgba(0,102,179,.72), rgba(0,74,130,.82))` }} />
+      {/* Video background like kh-uia.org.il */}
+      <video autoPlay muted loop playsInline poster="https://images.unsplash.com/photo-1547483238-2cbf881a559f?w=1600&q=80" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }}>
+        <source src="https://kerenhajessod.ch/wp-content/uploads/2026/03/Roaring-Lion.mp4" type="video/mp4" />
+      </video>
+      {/* Fallback background image if video fails */}
+      <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(https://images.unsplash.com/photo-1547483238-2cbf881a559f?w=1600&q=80)', backgroundSize: 'cover', backgroundPosition: 'center', zIndex: 0 }} />
+      <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(135deg, rgba(0,46,90,.82), rgba(0,102,179,.65), rgba(0,74,130,.75))`, zIndex: 1 }} />
       <div style={{ position: 'relative', zIndex: 2, maxWidth: 680, padding: '130px 24px 110px', marginLeft: 'max(24px, calc((100vw - 1200px)/2 + 24px))' }}>
         <R><div style={{ display: 'inline-block', background: 'rgba(255,255,255,.12)', backdropFilter: 'blur(8px)', border: '1px solid rgba(255,255,255,.18)', borderRadius: 50, padding: '8px 20px', fontFamily: fm, fontSize: 13, fontWeight: 600, color: '#fff', letterSpacing: 1, marginBottom: 24 }}>🇦🇹 Österreich — Wien</div></R>
         <R delay={.12}><h1 style={{ fontFamily: fm, fontWeight: 800, fontSize: 'clamp(34px,6vw,62px)', lineHeight: 1.1, color: '#fff', marginBottom: 22 }}>Für die Menschen<br />Israels</h1></R>
