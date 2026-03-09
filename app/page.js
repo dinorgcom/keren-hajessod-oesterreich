@@ -242,8 +242,11 @@ function Video() {
           <div style={{ fontFamily: fm, fontWeight: 700, fontSize: 11, letterSpacing: 3, textTransform: 'uppercase', color: C.blue, marginBottom: 10 }}>Sehen Sie unsere Wirkung</div>
           <h2 style={{ fontFamily: fm, fontWeight: 700, fontSize: 'clamp(24px,4vw,34px)', color: C.g900 }}>So haben Sie geholfen</h2>
         </div></R>
-        <R delay={.12}><div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, borderRadius: 8, overflow: 'hidden', boxShadow: '0 8px 36px rgba(0,0,0,.1)' }}>
-          <iframe src="https://www.youtube.com/embed/Mdu2xiHjfEM" title="Keren Hayesod – Your Impact" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} />
+        <R delay={.12}><div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, borderRadius: 8, overflow: 'hidden', boxShadow: '0 8px 36px rgba(0,0,0,.1)', background: '#000' }}>
+          <video controls playsInline preload="metadata" poster="https://images.unsplash.com/photo-1547483238-2cbf881a559f?w=1200&q=80" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }}>
+            <source src="https://kerenhajessod.ch/wp-content/uploads/2026/03/Roaring-Lion.mp4" type="video/mp4" />
+            Ihr Browser unterstützt kein Video.
+          </video>
         </div></R>
       </div>
     </section>
