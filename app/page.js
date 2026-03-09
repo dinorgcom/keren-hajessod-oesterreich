@@ -289,7 +289,6 @@ function About() {
           <div style={{ height: 300, borderRadius: 8, backgroundImage: 'url(https://images.unsplash.com/photo-1516550893923-42d28e5677af?w=800&q=80)', backgroundSize: 'cover', backgroundPosition: 'center' }} />
           <div style={{ marginTop: 18, background: C.blueLight, borderRadius: 8, padding: 22, borderLeft: `4px solid ${C.blue}` }}>
             <h4 style={{ fontFamily: fm, fontSize: 15, color: C.blueDark, marginBottom: 10 }}>Kontakt Wien</h4>
-            <p style={{ fontFamily: ff, fontSize: 14, lineHeight: 1.7, color: C.g700, marginBottom: 6 }}><strong style={{ color: C.g900 }}>Rafi Heumann</strong> — Landesvertreter Österreich</p>
             <p style={{ fontFamily: ff, fontSize: 14, lineHeight: 1.7, color: C.g700 }}><a href="mailto:kh-austria@kh-uia.org.il" style={{ color: C.blue, fontWeight: 600, textDecoration: 'none' }}>kh-austria@kh-uia.org.il</a><br />+43-1-535 536 630</p>
           </div>
         </R>
