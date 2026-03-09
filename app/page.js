@@ -115,7 +115,7 @@ function Hero() {
     <section id="top" style={{ position: 'relative', minHeight: '82vh', display: 'flex', alignItems: 'center', overflow: 'hidden' }}>
       {/* Video background like kh-uia.org.il */}
       <video autoPlay muted loop playsInline poster="https://images.unsplash.com/photo-1547483238-2cbf881a559f?w=1600&q=80" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }}>
-        <source src="https://kerenhajessod.ch/wp-content/uploads/2026/03/Roaring-Lion.mp4" type="video/mp4" />
+        <source src="/hero-bg.mp4" type="video/mp4" />
       </video>
       {/* Fallback background image if video fails */}
       <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(https://images.unsplash.com/photo-1547483238-2cbf881a559f?w=1600&q=80)', backgroundSize: 'cover', backgroundPosition: 'center', zIndex: 0 }} />
@@ -249,7 +249,7 @@ function Video() {
         </div></R>
         <R delay={.12}><div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, borderRadius: 8, overflow: 'hidden', boxShadow: '0 8px 36px rgba(0,0,0,.1)', background: '#000' }}>
           <video controls playsInline preload="metadata" poster="https://images.unsplash.com/photo-1547483238-2cbf881a559f?w=1200&q=80" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }}>
-            <source src="https://kerenhajessod.ch/wp-content/uploads/2026/03/Roaring-Lion.mp4" type="video/mp4" />
+            <source src="/hero-bg.mp4" type="video/mp4" />
             Ihr Browser unterstützt kein Video.
           </video>
         </div></R>
