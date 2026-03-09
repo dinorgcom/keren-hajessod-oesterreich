@@ -112,16 +112,19 @@ function Navbar() {
 function Hero() {
   const go = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
   return (
-    <section id="top" style={{ position: 'relative', minHeight: '82vh', display: 'flex', alignItems: 'center', overflow: 'hidden' }}>
-      {/* Fallback background image */}
-      <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(https://images.unsplash.com/photo-1547483238-2cbf881a559f?w=1600&q=80)', backgroundSize: 'cover', backgroundPosition: 'center', zIndex: 0 }} />
-      {/* Video background like kh-uia.org.il - sits above fallback image */}
-      <video autoPlay muted loop playsInline poster="https://images.unsplash.com/photo-1547483238-2cbf881a559f?w=1600&q=80" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 1 }}>
-        <source src="/hero-bg.mp4" type="video/mp4" />
-      </video>
-      {/* Semi-transparent overlay - lets video show through */}
-      <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(135deg, rgba(0,46,90,.55), rgba(0,102,179,.45), rgba(0,74,130,.55))`, zIndex: 2 }} />
-      <div style={{ position: 'relative', zIndex: 3, maxWidth: 680, padding: '130px 24px 110px', marginLeft: 'max(24px, calc((100vw - 1200px)/2 + 24px))' }}>
+    <section id="top" style={{ position: 'relative', minHeight: '82vh', display: 'flex', alignItems: 'center', overflow: 'hidden', background: '#002E5A' }}>
+      {/* Vimeo video background like kh-uia.org.il */}
+      <div style={{ position: 'absolute', inset: 0, zIndex: 0, overflow: 'hidden' }}>
+        <iframe
+          src="https://player.vimeo.com/video/903567693?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+          style={{ position: 'absolute', top: '50%', left: '50%', width: '177.78vh', minWidth: '100%', height: '100vh', minHeight: '100%', transform: 'translate(-50%,-50%)', border: 'none' }}
+          allow="autoplay; fullscreen"
+          allowFullScreen
+        />
+      </div>
+      {/* Light overlay for text readability */}
+      <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,30,60,.35)', zIndex: 1 }} />
+      <div style={{ position: 'relative', zIndex: 2, maxWidth: 680, padding: '130px 24px 110px', marginLeft: 'max(24px, calc((100vw - 1200px)/2 + 24px))' }}>
         <R><div style={{ display: 'inline-block', background: 'rgba(255,255,255,.12)', backdropFilter: 'blur(8px)', border: '1px solid rgba(255,255,255,.18)', borderRadius: 50, padding: '8px 20px', fontFamily: fm, fontSize: 13, fontWeight: 600, color: '#fff', letterSpacing: 1, marginBottom: 24 }}>🇦🇹 Österreich — Wien</div></R>
         <R delay={.12}><h1 style={{ fontFamily: fm, fontWeight: 800, fontSize: 'clamp(34px,6vw,62px)', lineHeight: 1.1, color: '#fff', marginBottom: 22 }}>Für die Menschen<br />Israels</h1></R>
         <R delay={.25}><p style={{ fontFamily: ff, fontSize: 'clamp(15px,2vw,18px)', lineHeight: 1.75, color: 'rgba(255,255,255,.85)', marginBottom: 32, maxWidth: 540 }}>Keren Hajessod – Vereinigte Israel Aktion ist seit 1920 die weltweit führende Spendenorganisation für den Staat Israel und seine Menschen.</p></R>
@@ -249,10 +252,13 @@ function Video() {
           <h2 style={{ fontFamily: fm, fontWeight: 700, fontSize: 'clamp(24px,4vw,34px)', color: C.g900 }}>So haben Sie geholfen</h2>
         </div></R>
         <R delay={.12}><div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, borderRadius: 8, overflow: 'hidden', boxShadow: '0 8px 36px rgba(0,0,0,.1)', background: '#000' }}>
-          <video controls playsInline preload="metadata" poster="https://images.unsplash.com/photo-1547483238-2cbf881a559f?w=1200&q=80" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }}>
-            <source src="/hero-bg.mp4" type="video/mp4" />
-            Ihr Browser unterstützt kein Video.
-          </video>
+          <iframe
+            src="https://player.vimeo.com/video/903567693?byline=0&title=0&portrait=0"
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none' }}
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+            title="Keren Hayesod — For The People of Israel"
+          />
         </div></R>
       </div>
     </section>
