@@ -253,7 +253,7 @@ function Video() {
         </div></R>
         <R delay={.12}><div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, borderRadius: 8, overflow: 'hidden', boxShadow: '0 8px 36px rgba(0,0,0,.1)', background: '#000' }}>
           <iframe
-            src="https://player.vimeo.com/video/903567693?byline=0&title=0&portrait=0"
+            src="https://player.vimeo.com/video/903567693?byline=0&title=0&portrait=0&loop=1"
             style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none' }}
             allow="autoplay; fullscreen; picture-in-picture"
             allowFullScreen
